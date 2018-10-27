@@ -3,14 +3,17 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     title Document
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet")
     link(rel="stylesheet", href="css/normalize.css")
     link(rel="stylesheet", href="css/style.css")
   body
     header.header
       .wrap.header-wrap
         .header-nav
+          svg.header-nav-svg
+            polygon(points='0,0 234,0 114,37' fill='#fff')
           .header-nav-img
-            img.header-nav-img_logo(src='images/pizza 2.png' alt='Painwall')
+            img.header-nav-img_logo(src='images/pizza 2.png' alt='Painwall' width='134px')
           ul.header-nav-menu
             li.header-nav-menu-item
               a.header-nav-menu-item_link(href='#') Designing
@@ -40,3 +43,9 @@ html(lang="en")
           //- .slider-item
           //- .slider-item
           //- .slider-item
+          .slider_dot-container
+            span.slider_dot.slider_dot__active
+            span.slider_dot
+            span.slider_dot
+            span.slider_dot
+            span.slider_dot
