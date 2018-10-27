@@ -26,19 +26,6 @@
   margin-bottom: 50px;
 }
 
-.slider-item-btn {
-  margin-bottom: 45px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 1.375em;
-  line-height: 1.75rem;
-  text-transform: uppercase;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
 .slider_dot {
   display: inline-block;
   width: 13px;
@@ -65,6 +52,34 @@ body {
 .wrap {
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.btn {
+  margin-bottom: 45px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.375em;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #1dc896;
+}
+
+.btn__green {
+  background-color: #1dc896;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.btn__green:hover {
+  border: 1px solid #1dc896;
 }
 .header {
   background-color: #2f9c85;
@@ -152,4 +167,26 @@ body {
 
 .partners_logo:hover {
   opacity: 0.5;
+}
+.thanks {
+  text-align: center;
+  color: #828282;
+}
+
+.thanks-wrap {
+  padding: 45px 60px;
+}
+
+.thanks_title {
+  font-size: 1.875em;
+  line-height: 3.0625rem;
+  font-weight: 300;
+  width: 72.6%;
+  margin: 30px auto 40px;
+}
+
+.thanks_text {
+  font-size: 0.875em;
+  line-height: 1.375rem;
+  margin-bottom: 45px;
 }
