@@ -128,3 +128,28 @@ body {
 .header-slider {
   padding-top: 125px;
 }
+.partners {
+  background-color: #fff;
+}
+
+.partners-wrap {
+  padding: 35px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  justify-items: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  grid-gap: 60px;
+}
+
+.partners_logo {
+  cursor: pointer;
+}
+
+.partners_logo:hover {
+  opacity: 0.5;
+}
