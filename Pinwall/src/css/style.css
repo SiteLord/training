@@ -190,3 +190,36 @@ body {
   line-height: 1.375rem;
   margin-bottom: 45px;
 }
+.features {
+  background-color: #1dc896;
+  color: #fff;
+}
+
+.features-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 60px 0;
+}
+
+.features-item {
+  width: 38%;
+}
+
+.features-item_title {
+  font-size: 1.5em;
+  line-height: 2.125rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.features-item_text {
+  font-size: 0.875em;
+  line-height: 1.375rem;
+  margin-bottom: 0;
+}
