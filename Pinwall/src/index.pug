@@ -27,28 +27,67 @@ html(lang="en")
               a.header-nav-menu-item_link(href='#') Authors
             li.header-nav-menu-item
               a.header-nav-menu-item_link(href='#') Contact us
-        .header-slider.slider
-          .slider-item
-            .slider-item-media
-              a.slider-item-media-link
-                img.slider-item-media-link_img(src='images/twitter.png' alt='twitter')
-              a.slider-item-media-link
-                img.slider-item-media-link_img(src='images/dribbble.png' alt='what')
-              a.slider-item-media-link
-                img.slider-item-media-link_img(src='images/camera.png' alt='instagram')
-            .slider-item-info
-              p.slider-item-info_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsum fugiat rem ratione mollitia numquam, odio vitae.
-            button.btn Social media
-          //- .slider-item
-          //- .slider-item
-          //- .slider-item
-          //- .slider-item
-          .slider_dot-container
-            span.slider_dot.slider_dot__active
-            span.slider_dot
-            span.slider_dot
-            span.slider_dot
-            span.slider_dot
+        .header-slider.slider.js_slider
+          .frame.js_frame
+            ul.slides.js_slides
+              li.slider-item.js_slide
+                .slider-item-media
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/camera.png' alt='instagram')
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/twitter.png' alt='twitter')
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/dribbble.png' alt='what')
+                .slider-item-info
+                  p.slider-item-info_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsum fugiat rem ratione mollitia numquam, odio vitae.
+                button.btn Social media
+              li.slider-item.js_slide
+                .slider-item-media
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/twitter.png' alt='twitter')
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/camera.png' alt='instagram')
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/dribbble.png' alt='what')
+                .slider-item-info
+                  p.slider-item-info_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsum fugiat rem ratione mollitia numquam, odio vitae.
+                button.btn Lalala
+              li.slider-item.js_slide
+                .slider-item-media
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/twitter.png' alt='twitter')
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/dribbble.png' alt='what')
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/camera.png' alt='instagram')
+                .slider-item-info
+                  p.slider-item-info_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsum fugiat rem ratione mollitia numquam, odio vitae.
+                button.btn Papapa
+              li.slider-item.js_slide
+                div.slider-item-media
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/dribbble.png' alt='what')
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/twitter.png' alt='twitter')
+                  a.slider-item-media-link
+                    img.slider-item-media-link_img(src='images/camera.png' alt='instagram')
+                div.slider-item-info
+                  p.slider-item-info_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsum fugiat rem ratione mollitia numquam, odio vitae.
+                button.btn Tratata
+          //- .slider_dot-container
+          //-   span.slider_dot.slider_dot__active
+          //-   span.slider_dot
+          //-   span.slider_dot
+          //-   span.slider_dot
+          //-   span.slider_dot
+          span.js_prev.prev
+            svg(xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5")
+              g
+                path(fill="#fff" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z")
+          span.js_next.next
+            svg(xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5")
+              g
+                path(fill="#fff" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z")
     section.partners
       .wrap.partners-wrap
         img.partners_logo(src="images/Coca.png", alt="CocaCola")
@@ -68,4 +107,20 @@ html(lang="en")
         .features-item
           h3.features-item_title At the same time that we are  earnest to explore &amp; learn all things
           p.features-item_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel rem ea fugit doloribus, distinctio quae esse, nulla cupiditate dignissimos, molestiae quibusdam deserunt suscipit. Qui nemo et, illum voluptatem commodi consectetur.
-    
+    section.contact
+      iframe.contact_map(src="https://yandex.ru/map-widget/v1/-/CBBHMISapA" height="500" frameborder="0" allowfullscreen="true")
+      form.contact-form#form
+        .contact-form-trigger.trigger#trigger
+          a.trigger-link
+            span.trigger-link_line.trigger-link_line__left#lineLeft
+            span.trigger-link_line.trigger-link_line__right#lineRight
+        h2.contact-form_title Contact us
+        .contact-form-container
+          input.contact-form_input(type="text" placeholder="Name" required)
+          input.contact-form_input(type="email" placeholder="Email address" required)
+          input.contact-form_input(type="tel" placeholder="Phone" required)
+          textarea.contact-form_input(name="", rows="3" placeholder="Message")
+          input.contact-form_btn.btn__green(type="submit")
+    script(src="js/lory.min.js")
+    script(src="js/slider.js")
+    script(src="js/script.js")

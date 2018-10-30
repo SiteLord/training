@@ -1,7 +1,18 @@
 .slider {
 	padding: 35px 50px;
+	width: 770px;
+	box-sizing: border-box;
+	position: 	relative;
 	&-item {
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
 		text-align: center;
+		padding-top: 125px;
+		white-space: pre-wrap;		
 		&-media {
 			width: 430px;
 			margin: 0 auto;
@@ -36,4 +47,35 @@
 			cursor: default;
 		}
 	}
+}
+.frame {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.slides {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 670px;
+}
+
+.prev, .next {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    cursor: pointer;
+}
+
+.next {
+    right: 45%;
+}
+
+.prev {
+    left: 45%;
+}
+
+.next svg, .prev svg {
+    width: 25px;
 }
